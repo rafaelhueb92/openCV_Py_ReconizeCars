@@ -5,6 +5,8 @@ def readCar(frame, scaleFactorValue, minSizeValue):
 
     classified = cv2.CascadeClassifier('cars.xml')
 
+    # frame = cv2.imread(<path of image")
+
     imageGray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     carsDetected = classified.detectMultiScale(
